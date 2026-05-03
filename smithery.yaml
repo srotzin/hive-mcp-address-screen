@@ -1,0 +1,42 @@
+name: hive-mcp-address-screen
+description: >
+  HiveAddressScreen MCP shim — pre-settlement on-chain risk screen.
+  17-vector GoPlus rail. Ed25519-signed C18 receipts.
+  Real-rail USDC on Base. USPTO Provisional 64/055,601 claim C23.
+version: "1.0.0"
+author: "Stephen A. Rotzin <steve@thehiveryiq.com>"
+license: MIT
+homepage: https://github.com/srotzin/hive-mcp-address-screen
+
+server:
+  transport: streamable-http
+  endpoint: /mcp
+  port: 3000
+  healthcheck: /health
+  discovery: /.well-known/mcp.json
+
+runtime:
+  language: node
+  version: ">=18"
+  entrypoint: server.js
+  install: npm install --omit=dev
+
+tools:
+  - name: address_screen
+    description: >
+      Screen an on-chain address against 17 GoPlus risk vectors (C23).
+      Returns full response including Ed25519-signed C18 receipt.
+  - name: address_screen_clear_only
+    description: >
+      Convenience wrapper — returns is_clear (bool) and flags_hit list only.
+      Same real rail as address_screen; transformed response.
+
+tags:
+  - mcp
+  - address-risk
+  - goplus
+  - on-chain-compliance
+  - attestation
+  - ed25519
+  - base
+  - hive-civilization

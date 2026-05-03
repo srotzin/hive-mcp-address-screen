@@ -1,0 +1,44 @@
+{
+  "name": "@hivecivilization/hive-mcp-address-screen",
+  "version": "1.0.0",
+  "description": "HiveAddressScreen MCP shim — pre-settlement on-chain risk screen. 17-vector GoPlus rail. Ed25519-signed C18 receipts. Real-rail USDC on Base. USPTO Provisional 64/055,601 claim C23.",
+  "type": "module",
+  "main": "server.js",
+  "bin": {
+    "hive-mcp-address-screen": "./server.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "hive",
+    "hive-civilization",
+    "address-risk",
+    "goplus",
+    "on-chain-compliance",
+    "attestation",
+    "ed25519",
+    "base",
+    "usdc",
+    "agentic",
+    "ai-agent",
+    "autonomous-agents",
+    "pre-settlement"
+  ],
+  "author": "Stephen A. Rotzin <steve@thehiveryiq.com> (https://www.thehiveryiq.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/srotzin/hive-mcp-address-screen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srotzin/hive-mcp-address-screen"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
