@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.srotzin/hive-mcp-address-screen",
+  "description": "HiveAddressScreen MCP \u2014 pre-settlement on-chain risk screen. 17-vector GoPlus rail",
+  "title": "Hive Address Screen",
+  "websiteUrl": "https://thehiveryiq.com",
+  "repository": {
+    "url": "https://github.com/srotzin/hive-mcp-address-screen",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://hive-mcp-gateway.onrender.com/address-screen/mcp"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "tool": "hive-release-tool",
+      "version": "1.0.0",
+      "build_info": {
+        "stack": "hive-civilization",
+        "settlement": "USDC on Base",
+        "license": "MIT"
+      }
+    }
+  }
+}
